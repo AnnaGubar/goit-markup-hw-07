@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+body {
+ margin-left: 215px;
+ margin-right: 215px;
+ font-family: Roboto, sans-serif;
+ letter-spacing: 0.03em;
+
+ color: $head-text-color;
+}
+
+.content {
+ width: 1200px;
+ margin: 0 auto;
+ padding-left: 15px;
+ padding-right: 15px;
+
+ // outline: 2px solid red;
+}
+
+.list {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+.logo-links {
+ color: #afb1b8;
+}
+
+.text-accent,
+.studio-footer {
+ color: $second-text-accent-color;
+}

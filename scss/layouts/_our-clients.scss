@@ -1,0 +1,52 @@
+.clients {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 94px;
+ margin-bottom: 50px;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+}
+
+.clients-list {
+ display: flex;
+}
+
+.clients-list li:not(:last-child) {
+ margin-right: 30px;
+}
+
+.clients-list li {
+ margin-bottom: 94px;
+}
+
+.company-icon {
+ display: flex;
+ justify-content: center;
+ min-height: 90px;
+ margin: auto;
+ fill: #afb1b8;
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo {
+ height: 90px;
+ width: 170px;
+ border: 1px solid #afb1b8;
+ border-radius: 4px;
+ color: transparent;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+ color: $first-text-accent-color;
+ border: 1px solid $first-text-accent-color;
+}
+
+.clients-logo:hover .company-icon,
+.clients-logo:focus .company-icon {
+ fill: $first-text-accent-color;
+}
