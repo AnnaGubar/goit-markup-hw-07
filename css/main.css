@@ -1238,7 +1238,7 @@ address {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .button-footer::after {
@@ -1250,7 +1250,9 @@ address {
   margin-left: 10px;
   background-image: url("../images/footer_icon.svg");
   background-size: contain;
-  /* position: absolute; */
+  top: 50%;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .links-footer a {
